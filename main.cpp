@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Person.h"
+#include <string>
 
 int main() {
 
@@ -9,6 +10,6 @@ int main() {
     John.Add_Resource();
     Person John2 = John;
     John = John2;
-
+    std::string s1 = John.Get_resource_name();
     return 0;
 }

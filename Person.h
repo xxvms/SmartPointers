@@ -33,7 +33,7 @@ public:
     //Person&operator= (const Person& p); // this is copy assignment operator
     // same reason as with copy constructor we don't need this as shared_ptr will deal with this
     void Add_Resource();
-
+    std::string Get_resource_name() const { return pResource->Get_Name();}
 };
 bool operator<(int i, const Person& p);
 
